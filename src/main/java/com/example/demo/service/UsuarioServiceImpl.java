@@ -1,5 +1,7 @@
 package com.example.demo.service;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,6 +18,12 @@ public class UsuarioServiceImpl implements UsuarioService{
 	public Usuario save(Usuario usuario) {
 		// TODO Auto-generated method stub
 		return this.usuarioRepository.save(usuario);
+	}
+
+	@Override
+	public List<Usuario> findAllUsuarios() {
+		// TODO Auto-generated method stub
+		return this.usuarioRepository.findAll();
 	}	
 		
 	
