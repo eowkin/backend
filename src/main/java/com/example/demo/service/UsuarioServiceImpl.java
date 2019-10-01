@@ -24,6 +24,13 @@ public class UsuarioServiceImpl implements UsuarioService{
 	public List<Usuario> findAllUsuarios() {
 		// TODO Auto-generated method stub
 		return this.usuarioRepository.findAll();
+	}
+
+	@Override
+	public void deleteUsuario(Long id) {
+		// TODO Auto-generated method stub
+		
+		this.usuarioRepository.deleteById(id);
 	}	
 		
 	

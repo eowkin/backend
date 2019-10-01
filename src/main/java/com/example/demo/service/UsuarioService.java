@@ -19,4 +19,11 @@ public interface UsuarioService {
 	 */
 	List<Usuario> findAllUsuarios();
 
+	
+	/**
+	 * Borra a un usuario de la tabla mediante su id
+	 * @param id del usuario a borrar
+	 */
+	void deleteUsuario(Long id);
+
 }
